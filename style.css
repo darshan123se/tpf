@@ -1,0 +1,356 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:white;
+}
+
+
+/* HEADER */
+
+header{
+
+background:black;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 80px;
+
+}
+
+
+/* LOGO */
+
+.logo img{
+height:140px;
+}
+
+
+/* NAVIGATION */
+
+nav ul{
+
+display:flex;
+gap:35px;
+
+list-style:none;
+
+color:white;
+
+font-size:17px;
+
+}
+
+nav ul li{
+
+cursor:pointer;
+
+}
+
+nav ul li:hover{
+
+color:#f5ff00;
+
+}
+
+
+
+/* HERO IMAGE */
+
+.hero{
+
+height:90vh;
+
+background-image:url("gym.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding-left:120px;
+
+animation: zoomImage 12s ease-in-out infinite alternate;
+
+}
+
+
+
+/* HERO TEXT */
+
+.hero-text h1{
+
+font-size:80px;
+
+color:white;
+
+font-weight:bold;
+
+line-height:90px;
+
+text-shadow:2px 2px 20px black;
+
+opacity:0;
+
+transform:translateY(50px);
+
+animation: textReveal 2s ease forwards;
+
+animation-delay:0.5s;
+
+}
+
+
+
+/* TEXT ANIMATION */
+
+@keyframes textReveal{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* IMAGE ZOOM */
+
+@keyframes zoomImage{
+
+0%{
+background-size:100%;
+}
+
+100%{
+background-size:110%;
+}
+
+}
+
+
+
+/* FITNESS SECTION */
+
+.fitness-section{
+
+background:#0d0d0d;
+
+padding:120px 100px;
+
+}
+
+
+
+.fitness-container{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:80px;
+
+}
+
+
+
+/* TEXT */
+
+.fitness-text h2{
+
+font-size:45px;
+
+color:white;
+
+line-height:60px;
+
+font-weight:bold;
+
+}
+
+
+
+.know{
+
+margin-top:20px;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+
+
+/* VIDEO */
+
+.fitness-video video{
+
+width:650px;
+
+border-radius:10px;
+
+object-fit:cover;
+
+box-shadow:0px 10px 40px rgba(0,0,0,0.6);
+
+}
+
+
+
+/* COMMUNITY SECTION */
+
+.community-section{
+
+background:#111;
+
+padding:120px 100px;
+
+color:white;
+
+}
+
+
+
+.community-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+gap:80px;
+
+}
+
+
+
+/* LEFT TITLE */
+
+.community-left h2{
+
+font-size:70px;
+
+line-height:80px;
+
+font-weight:bold;
+
+}
+
+
+
+/* ADDRESS */
+
+.community-address h3{
+
+font-size:22px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.community-address p{
+
+color:#bfbfbf;
+
+line-height:28px;
+
+margin-bottom:30px;
+
+}
+
+
+
+/* CONTACT */
+
+.community-contact h3{
+
+font-size:22px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.community-contact p{
+
+color:#bfbfbf;
+
+margin-bottom:10px;
+
+}
+
+
+
+.phone{
+
+margin-top:25px;
+
+font-size:34px;
+
+letter-spacing:2px;
+
+}
+
+
+
+/* SOCIAL ICONS */
+
+.social-icons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+
+
+.social-icons span{
+
+width:40px;
+
+height:40px;
+
+border:1px solid #555;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+cursor:pointer;
+
+}
+
+
+
+.social-icons span:hover{
+
+border-color:white;
+
+}
